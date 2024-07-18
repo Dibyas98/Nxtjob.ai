@@ -1,5 +1,7 @@
 import React, { useId } from 'react'
 import { MainBox, Title, Card } from '../ui/index'
+import { title } from 'process';
+import about from './workwithusabout.png'
 
 function WorkWithUs() {
     const id = useId();
@@ -29,38 +31,65 @@ function WorkWithUs() {
             desc: 'We build your personal roadmap of lessons and actions towards your goals.'
         }
     ];
+
+    const workwithus = [
+        {
+            title: 'About',
+            desc: `At ahead our goal is to make self-improvenment fun and lasting. We know there's a way hoe to make it work. And that's what aHead is all about!`,
+            cardclass:'bg-white',
+            emoji:about
+        },
+        {
+            title: 'Product',
+            desc: `Sure, you could spend ages reading books or sitting in seminars on how to become  better spouse, parent, or manager - like we did...`,
+            cardclass:'bg-[#FEF7F1]',
+            emoji:''
+        }
+    ]
     return (
         <MainBox>
-            <main className='bg-[#f3f1ff] w-full h-[90vh]  py-5 flex flex-col lg:flex-row xl:flex-row'>
-                <div className='w-full'>
-                    <Title title='Work with us'></Title>
-                    <div className='w-full'>
-                        <div className='w-full bg-white'>
-                            <div className=''>
-                                
-                            </div>
-                        </div>
-                    </div>
+            <main className='bg-[#f3f1ff] w-full lg:h-[100vh] xl:h-[90vh]  py-5 flex flex-col lg:flex-row xl:flex-row lg:px-44 gap-10 lg:gap-0 px-3'>
+                <div className='w-full md:px-10 flex flex-col gap-6 rounded-lg'>
+                    <Title title='Work with us' className='text-5xl'></Title>
+                    <div className='w-full flex '>
+                        <div className='w-5/5  bg-white rounded-xl shadow'>
 
-                </div>
-                    <div className='w-full h-5/6 flex flex-col items-center px-5 gap-5'>
-                        <Title title='ahead' className='text-[#6541f2] lg:text-right'></Title>
-                        <div className='w-full h-[45vh] lg:h-full overflow-x-scroll md:overflow-y-scroll lg:overflow-y-scroll flex-row flex lg:flex-col justify-start gap-5 overflow-y-hidden lg:overflow-x-visible  sm:px-5 '>
                             {
-                                carddetails.map((ele, idx) => {
-                                    return <div className='min-w-[250px] lg:w-full flex justify-center' key={id + idx}>
+                                workwithus.map((ele, idx) => {
+                                    return <div className='w-full'>
                                         <Card
                                             title={ele.title}
                                             desc={ele.desc}
-                                            cardclassName='w-full lg:w-4/5 xl:w-3/5 h-[190px]'
+                                            className=''
+                                            titleclassName='text-4xl'
+                                            descclassName='text-[1.1rem] leading-6'
+                                            cardclassName={`${ele.cardclass} py-10`}
+                                            emoji={ele.emoji}
                                         />
                                     </div>
                                 })
                             }
                         </div>
                     </div>
+                </div>
+                <div className='w-full h-5/6 flex flex-col items-center px-5 gap-5 '>
+                    <Title title='ahead' className='text-[#6541f2] lg:text-right text-5xl '></Title>
+                    <div className='w-full h-[45vh] lg:h-full overflow-x-scroll md:overflow-y-scroll lg:overflow-y-scroll flex-row flex lg:flex-col justify-start gap-5 overflow-y-hidden lg:overflow-x-visible  sm:px-5 '>
+                        {
+                            carddetails.map((ele, idx) => {
+                                return <div className='min-w-[250px] lg:w-full flex justify-end' key={id + idx}>
+                                    <Card
+                                        title={ele.title}
+                                        desc={ele.desc}
+                                        cardclassName='w-full lg:w-4/5 xl:w-3/5 h-[180px] bg-white '
+                                    />
+                                </div>
+                            })
+                        }
+                    </div>
+                </div>
             </main>
-        </MainBox>
+        </MainBox >
     )
 }
 
