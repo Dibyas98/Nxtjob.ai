@@ -4,6 +4,7 @@ import WorkWithUs from "./component/workwithus/WorkWithUs";
 import BeforeWeGetStart from "./component/beforewegetstart/BeforeWeGetStart";
 import BeTheBest from "./component/bethebest/BeTheBest";
 import EqBeatIq from "./component/eqbeatiq/EqBeatIq";
+import Vaccencies from "./component/vaccencies/Vaccencies";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <BeTheBest></BeTheBest>
         <BeforeWeGetStart></BeforeWeGetStart>
         <WorkWithUs />
+        <Vaccencies/>
       </section>
     </>
   );

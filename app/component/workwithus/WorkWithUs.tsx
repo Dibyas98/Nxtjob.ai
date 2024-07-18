@@ -48,7 +48,7 @@ function WorkWithUs() {
     ]
     return (
         <MainBox>
-            <main className='bg-[#f3f1ff] w-full lg:h-[100vh] xl:h-[90vh]  py-5 flex flex-col lg:flex-row xl:flex-row lg:px-44 gap-10 lg:gap-0 px-3'>
+            <main className='bg-[#f3f1ff] w-full lg:h-[120vh] xl:h-[110vh]  py-5 flex flex-col lg:flex-row xl:flex-row lg:px-44 gap-10 lg:gap-0 px-3'>
                 <div className='w-full md:px-10 flex flex-col gap-6 rounded-lg'>
                     <Title title='Work with us' className='text-5xl'></Title>
                     <div className='w-full flex '>
