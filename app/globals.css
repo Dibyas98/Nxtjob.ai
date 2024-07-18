@@ -11,3 +11,7 @@
 .shadow{
   box-shadow: 0px 15px 20px 4px #b29494;
 }
+
+.progres-shadow{
+  box-shadow: 0px 7px 20px 7px #9cb6c4;
+}
