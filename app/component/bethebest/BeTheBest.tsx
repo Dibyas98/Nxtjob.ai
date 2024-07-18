@@ -1,0 +1,23 @@
+import React from 'react'
+import { MainBox } from '../ui/index'
+function BeTheBest() {
+    return (
+        <MainBox>
+            <main className='w-full flex justify-center h-[80vh] items-center'>
+                <section className='w-full md:w-3/4 lg:w-3/4 flex flex-col md:flex-row lg:flex-row justify-center gap-5'>
+                    <div className='w-full md:w-3/5 lg:w-1/4'>
+                        <h1 className='text-2xl font-bold text-center md:w-5/5 lg:w-4/5 lg:text-left md:text-left'>Be the best you with EQ</h1>
+                    </div>
+                    <div className='w-full md:w-3/5 lg:w-1/4'>
+                        <p className='text-base font-medium lg:w-4/5 text-center lg:text-left md:text-left'>Not having your own emotions under control might be holding you back.</p>
+                    </div>
+                    <div className='w-full md:w-3/5 lg:w-1/4'>
+                        <p  className='text-base font-medium lg:w-4/5 text-center md:text-left lg:text-left'>Additionally, not understanding those of others stops you from being parent, friend you can be.</p>
+                    </div>
+                </section>
+            </main>
+        </MainBox>
+    )
+}
+
+export default BeTheBest
