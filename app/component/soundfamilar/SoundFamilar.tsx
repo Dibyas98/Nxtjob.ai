@@ -34,7 +34,7 @@ function SoundFamilar() {
     ]
   return (
     <MainBox>
-        <main className='w-full flex justify-center'>
+        <main className='w-full flex justify-center h-[80vh] items-center'>
             <section className='w-full xl:w-4/5 lg:w-4/5 lg:px-10 gap-5 flex flex-col'>
                 <h1 className='text-3xl font-bold lg:pl-28'>Does this sound familiar</h1>
                 <div className='w-full flex overflow-x-scroll gap-2 lg:px-20'>

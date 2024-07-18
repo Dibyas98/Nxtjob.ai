@@ -6,6 +6,7 @@ import BeTheBest from "./component/bethebest/BeTheBest";
 import EqBeatIq from "./component/eqbeatiq/EqBeatIq";
 import Vaccencies from "./component/vaccencies/Vaccencies";
 import SoundFamilar from "./component/soundfamilar/SoundFamilar";
+import MeetTheAhead from "./component/meettheahead/MeetTheAhead";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <section className="mt-16">
         <EqBeatIq></EqBeatIq>
         <SoundFamilar></SoundFamilar>
+        <MeetTheAhead></MeetTheAhead>
         <BeTheBest></BeTheBest>
         <BeforeWeGetStart></BeforeWeGetStart>
         <WorkWithUs />
