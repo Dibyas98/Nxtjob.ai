@@ -29,11 +29,11 @@ const SmallScreem = () => {
             <div className='w-full'>
                 <AlignJustify></AlignJustify>
             </div>
-            <div className='fixed top-16 left-0 w-[90vw]'>
+            {/* <div className='fixed top-16 left-0 w-[90vw]'>
                 <div className='w-full h-screen border-4 px-5 py-5'>
                     <Menu></Menu>
                 </div>
-            </div>
+            </div> */}
         </section>
     )
 }
