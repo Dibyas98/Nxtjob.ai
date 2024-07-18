@@ -26,10 +26,10 @@ function Vaccencies(): React.ReactNode {
             <main className='w-full h-[60vh] flex justify-center py-8'>
                 <section className='w-full lg:w-3/4'>
                     <h1 className='w-full text-3xl font-bold'>Open vacancies</h1>
-                    <div className='flex flex-col md:flex-row lg:flex-row w-full gap-5 md:gap-2 h-[30vh] overflow-y-scroll lg:h-auto lg:overflow-auto'>
+                    <div className='flex flex-col md:flex-row lg:flex-row w-full sm:items-center gap-5 md:gap-0 h-[35vh] md:h-[40vh] overflow-y-scroll md:overflow-auto lg:h-auto lg:overflow-auto'>
                         {
                             vac.map((ele, idx) => {
-                                return <div className='w-full md:w-2/5 lg:w-2/5 p-5'>
+                                return <div className='w-full sm:w-3/5 md:w-2/5 lg:w-2/5 p-5'>
                                     <VacenciCard post_name={ele.post_name} salary={ele.salary} />
                                 </div>
                             })
