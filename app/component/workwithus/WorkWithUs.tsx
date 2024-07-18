@@ -48,15 +48,15 @@ function WorkWithUs() {
     ]
     return (
         <MainBox>
-            <main className='bg-[#f3f1ff] w-full lg:h-[150vh] xl:h-[120vh]  py-5 flex flex-col lg:flex-row xl:flex-row lg:px-44 gap-10 lg:gap-0 px-3 justify-center'>
-                <div className='w-full md:px-10 flex flex-col gap-6 rounded-lg'>
-                    <Title title='Work with us' className='text-5xl'></Title>
+            <main className='bg-[#f3f1ff] w-full lg:h-[150vh] xl:h-[120vh]  py-16 flex flex-col lg:flex-row xl:flex-row lg:px-44 gap-10 lg:gap-0 px-3 justify-center'>
+                <div className='w-full md:px-10 flex flex-col gap-6 rounded-lg' >
+                    <Title title='Work with us' className='text-5xl' ></Title>
                     <div className='w-full flex '>
                         <div className='w-5/5  bg-white rounded-xl shadow'>
 
                             {
                                 workwithus.map((ele, idx) => {
-                                    return <div className='w-full'>
+                                    return <div className='w-full' key={id+60+idx}>
                                         <Card
                                             title={ele.title}
                                             desc={ele.desc}

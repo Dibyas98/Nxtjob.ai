@@ -4,7 +4,7 @@ function EqBeatIq():React.ReactNode {
   return (
     <MainBox>
     <main className='w-full flex justify-center'>
-        <section className='w-full md:w-3/4 lg:w-3/4 flex flex-col md:flex-row lg:flex-row justify-center gap-5'>
+        <section className='w-full md:w-3/4 lg:w-3/4 flex flex-col md:flex-row lg:flex-row justify-center gap-5 h-[50vh] md:items-center lg:items-center xl:items-center'>
             <div className='w-full md:w-3/5 lg:w-1/4'>
                 <h1 className='text-2xl font-bold text-center md:w-5/5 lg:w-4/5 lg:text-left md:text-left'>EQ beats IQ</h1>
             </div>
