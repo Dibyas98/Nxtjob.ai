@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useId } from 'react'
 import { MainBox } from "../ui/index"
 import VacenciCard from './VacenciCard'
 function Vaccencies(): React.ReactNode {
@@ -21,6 +21,7 @@ function Vaccencies(): React.ReactNode {
                 salary: '$20-24k,0.5-1.50% equity share options'
             }
         ]
+        const id=useId()
     return (
         <MainBox>
             <main className='w-full h-[60vh] flex justify-center py-8'>
@@ -29,7 +30,7 @@ function Vaccencies(): React.ReactNode {
                     <div className='flex flex-col md:flex-row lg:flex-row w-full sm:items-center gap-5 md:gap-0 h-[35vh] md:h-[40vh] overflow-y-scroll md:overflow-auto lg:h-auto lg:overflow-auto'>
                         {
                             vac.map((ele, idx) => {
-                                return <div className='w-full sm:w-3/5 md:w-2/5 lg:w-2/5 p-5'>
+                                return <div className='w-full sm:w-3/5 md:w-2/5 lg:w-2/5 p-5' key={id+idx}>
                                     <VacenciCard post_name={ele.post_name} salary={ele.salary} />
                                 </div>
                             })

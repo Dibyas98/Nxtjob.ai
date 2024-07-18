@@ -1,9 +1,14 @@
-import React, { useId } from 'react'
+'use client'
+import React, { useEffect, useId } from 'react'
 import { MainBox, Title, Card } from '../ui/index'
 import { title } from 'process';
 import about from './workwithusabout.png'
+import AOS from 'aos';
 
 function WorkWithUs() {
+    useEffect(()=>{
+        AOS.init();
+    },[])
     const id = useId();
     const carddetails: { title: string, desc: string }[] = [
         {
@@ -49,9 +54,9 @@ function WorkWithUs() {
     return (
         <MainBox>
             <main className='bg-[#f3f1ff] w-full lg:h-[150vh] xl:h-[120vh]  py-16 flex flex-col lg:flex-row xl:flex-row lg:px-44 gap-10 lg:gap-0 px-3 justify-center'>
-                <div className='w-full md:px-10 flex flex-col gap-6 rounded-lg' >
+                <div className='w-full md:px-10 flex flex-col gap-6 rounded-lg'  data-aos="fade-right">
                     <Title title='Work with us' className='text-5xl' ></Title>
-                    <div className='w-full flex '>
+                    <div className='w-full flex ' >
                         <div className='w-5/5  bg-white rounded-xl shadow'>
 
                             {
@@ -72,12 +77,12 @@ function WorkWithUs() {
                         </div>
                     </div>
                 </div>
-                <div className='w-full h-5/6 flex flex-col items-center px-5 gap-5 '>
+                <div className='w-full h-5/6 flex flex-col items-center px-5 gap-5 ' data-aos="fade-left">
                     <Title title='ahead' className='text-[#6541f2] lg:text-right text-5xl '></Title>
                     <div className='w-full h-[45vh] lg:h-full overflow-x-scroll md:overflow-y-scroll lg:overflow-y-scroll flex-row flex lg:flex-col justify-start gap-5 overflow-y-hidden lg:overflow-x-visible  sm:px-5 '>
                         {
                             carddetails.map((ele, idx) => {
-                                return <div className='min-w-[250px] lg:w-full flex justify-end' key={id + idx}>
+                                return <div className='min-w-[250px] lg:w-full flex justify-end' key={id + idx} >
                                     <Card
                                         title={ele.title}
                                         desc={ele.desc}
