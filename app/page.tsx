@@ -15,7 +15,7 @@ export default function Home() {
         <EqBeatIq></EqBeatIq>
         <SoundFamilar></SoundFamilar>
         <BeTheBest></BeTheBest>
-        <BeforeWeGetStart></BeforeWeGetStart>
+        {/* <BeforeWeGetStart></BeforeWeGetStart> */}
         <WorkWithUs />
         <Vaccencies/>
       </section>
