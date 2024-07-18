@@ -39,7 +39,7 @@ const SmallScreem = () => {
 }
 function Navbar() {
     return (
-        <section className='w-full  h-16 fixed top-0'>
+        <section className='w-full  h-16 fixed top-0 bg-white z-10'>
             <LargeScreen>
                 <SmallScreem></SmallScreem>
             </LargeScreen>
