@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useId } from 'react'
 import { MainBox, Title, ImprovmentSteeper } from '../ui/index'
 
 const improvement: { title: string, des: string }[] = [
@@ -20,6 +20,7 @@ const improvement: { title: string, des: string }[] = [
     }
 ]
 function SelfImprovement() {
+    const id=useId()
     return (
         <MainBox>
             <main className='w-full h-fit lg:h-[90vh] flex items-center py-10'>
@@ -31,7 +32,7 @@ function SelfImprovement() {
                     <div className='w-full'>
                         {
                             improvement.map((self, idx) => {
-                                return <ImprovmentSteeper title={self.title} desc={self.des} id={idx} self={improvement.length}></ImprovmentSteeper>
+                                return <ImprovmentSteeper title={self.title} desc={self.des} id={idx} self={improvement.length} key={id+idx+self.title}></ImprovmentSteeper>
                             })
                         }
                     </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useId } from 'react'
 import { MainBox,Title,ParaCard } from '../ui/index'
 
 const stepper: { text: string, color: string, position?: string }[] = [
@@ -25,15 +25,16 @@ const stepper: { text: string, color: string, position?: string }[] = [
 ]
 
 const Steeper = ():React.ReactNode => {
+    const id=useId();
    return(
     <div className=' w-full h-5 flex justify-between relative px-5'>
     <div className='w-[90%] sm:w-[92%] md:w-[92%] lg:w-[90%] xl:w-[91%] h-[1px] bg-gray-400 absolute top-[10px]'></div>
     {
         stepper.map((ele, idx) => {
-            return <div className={`w-5 h-5 rounded-full  z-0 relative text-wrap`} style={{ backgroundColor: `#${ele.color}` }}>
+            return <div className={`w-5 h-5 rounded-full  z-0 relative text-wrap`} style={{ backgroundColor: `#${ele.color}` }} key={id+idx+ele}>
                 <p className={`text-xs flex gap-1  absolute text-white py-2 px-4 rounded-md  ${ele.position}`} style={{ backgroundColor: `#${ele.color}` }}>
                     {
-                        ele.text.split(" ").map((el) => <span>{el} </span>)
+                        ele.text.split(" ").map((el) => <span key={id+idx+el}>{el} </span>)
                     }
                 </p>
             </div>
