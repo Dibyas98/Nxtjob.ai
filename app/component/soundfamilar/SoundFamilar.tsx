@@ -1,5 +1,5 @@
 import React from 'react'
-import {MainBox,Card} from '../ui/index'
+import {MainBox,Card,Title} from '../ui/index'
 function SoundFamilar() {
     const carddetails:{title:string,desc:string,emoji:string,back?:string}[]=[
         {
@@ -34,9 +34,9 @@ function SoundFamilar() {
     ]
   return (
     <MainBox>
-        <main className='w-full flex justify-center h-[80vh] items-center'>
+        <main className='w-full flex justify-center h-[50vh] items-center'>
             <section className='w-full xl:w-4/5 lg:w-4/5 lg:px-10 gap-5 flex flex-col'>
-                <h1 className='text-3xl font-bold lg:pl-28'>Does this sound familiar</h1>
+                <Title title='Does this sound familiar' className='text-3xl font-bold lg:pl-28'></Title>
                 <div className='w-full flex overflow-x-scroll gap-2 lg:px-20'>
                     {
                         carddetails.map((ele,idx)=>{

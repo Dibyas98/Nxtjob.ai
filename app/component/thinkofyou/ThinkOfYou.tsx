@@ -1,7 +1,6 @@
 import React from 'react'
-import { MainBox } from '../ui/index'
-import { text } from 'stream/consumers'
-import { Span } from 'next/dist/trace'
+import { MainBox,Title,ParaCard } from '../ui/index'
+
 const stepper: { text: string, color: string, position?: string }[] = [
     {
         text: "You",
@@ -51,10 +50,10 @@ function ThinkOfYou(): React.ReactNode {
     return (
         <MainBox>
             <main className='w-full lg:px-20 '>
-                <section className='bg-[#EDF8FE] w-full px-3  py-10'>
+                <section className='bg-[#EDF8FE] w-full px-3  py-10 rounded-lg'>
                     <div className='flex flex-col items-center gap-5'>
-                        <p className='text-center'>Let your friends, family, and co-workers (anonymously) rate your social skills</p>
-                        <h1 className='text-5xl font-bold text-center'>Ever wounded what others think of you?</h1>
+                        <ParaCard para='Let your friends, family, and co-workers (anonymously) rate your social skills' pclassName='text-center'></ParaCard>
+                        <Title title='Ever wounded what others think of you?' className='text-5xl font-bold text-center'></Title>
                     </div>
                     <div className='w-full'>
                         <div>
