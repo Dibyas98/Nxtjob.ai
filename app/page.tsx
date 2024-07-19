@@ -8,6 +8,7 @@ import Vaccencies from "./component/vaccencies/Vaccencies";
 import SoundFamilar from "./component/soundfamilar/SoundFamilar";
 import MeetTheAhead from "./component/meettheahead/MeetTheAhead";
 import ThinkOfYou from "./component/thinkofyou/ThinkOfYou";
+import SelfImprovement from "./component/selfimprovement/SelfImprovement";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <EqBeatIq></EqBeatIq>
         <SoundFamilar></SoundFamilar>
         <MeetTheAhead></MeetTheAhead>
+        <SelfImprovement></SelfImprovement>
         <BeTheBest></BeTheBest>
         <ThinkOfYou></ThinkOfYou>
         <BeforeWeGetStart></BeforeWeGetStart>
