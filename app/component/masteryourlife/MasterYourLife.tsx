@@ -4,9 +4,9 @@ function MasterYourLife() {
   return (
     <MainBox>
         <main className='w-full px-3 h-[90vh]'>
-            <section className='w-full h-full bg-[#EEEBFE] rounded-xl flex'>
+            <section className='w-full h-full bg-[#EEEBFE] rounded-xl flex flex-col md:flex-row lg:flex-row '>
                 <div className='w-full flex items-center px-6'>
-                    <Title title='Master your life by mattering emotions' className='text-3xl sm:text-4xl lg:text-6xl px-10 w-4/5'></Title>
+                    <Title title='Master your life by mattering emotions' className='text-3xl sm:text-4xl lg:text-6xl px-1 lg:px-10 w-4/5'></Title>
                     <div></div>
                 </div>
                 <div className='w-full flex justify-center items-center'>
