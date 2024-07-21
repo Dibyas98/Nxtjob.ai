@@ -34,13 +34,14 @@ function SoundFamilar() {
     ]
   return (
     <MainBox>
-        <main className='w-full flex justify-center h-[50vh] items-center'>
+        <main className='w-full flex justify-center h-[80vh] items-center'>
             <section className='w-full xl:w-4/5 lg:w-4/5 lg:px-10 gap-5 flex flex-col'>
                 <Title title='Does this sound familiar' className='text-3xl font-bold lg:pl-28'></Title>
-                <div className='w-full flex overflow-x-scroll gap-2 lg:px-20'>
+                <div className='w-100vh overflow-hidden soundfamilar'>
+                <div className='w-full flex overflow-x-scroll gap-10 lg:px-20 scrollbar-hide h-[400px] items-center'>
                     {
                         carddetails.map((ele,idx)=>{
-                            return <div className={`min-w-[250px] lg:w-full flex justify-end `} style={{backgroundColor:ele.back}} key={ idx}>
+                            return <div className={`min-w-[250px] lg:w-full h-fit flex justify-end rounded-lg hover:scale-125 hover:-rotate-[25deg]`} style={{backgroundColor:ele.back,transitionDelay:'5sec'}} key={ idx}>
                             <Card
                                 title={ele.title}
                                 desc={ele.desc}
@@ -50,6 +51,7 @@ function SoundFamilar() {
                         </div>
                         })
                     }
+                </div>
                 </div>
             </section>
         </main>
