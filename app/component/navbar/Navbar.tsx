@@ -16,7 +16,7 @@ const LargeScreen = ({ children }: { children: ReactNode }) => {
             <div className='w-full hidden md:flex xl:block '>
                 <Menu ></Menu>
             </div>
-            <div className='w-full hidden sm:w-2/5 md:w-2/6 lg:w-2/6'>
+            <div className='w-full sm:w-2/5 md:w-2/6 lg:w-2/6'>
                 <Button btn='Download app' className='bg-black text-white  lg:w-4/5 xl:w-3/4 rounded-3xl py-1'>
                 </Button></div>
         </nav>
@@ -39,7 +39,7 @@ const SmallScreem = () => {
 }
 function Navbar() {
     return (
-        <section className='w-full  h-16 fixed top-0 bg-white z-10'>
+        <section className='w-screen  h-16 fixed top-0 bg-white z-10'>
             <LargeScreen>
                 <SmallScreem></SmallScreem>
             </LargeScreen>
