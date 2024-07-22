@@ -17,7 +17,7 @@ export default function Home() {
       <Navbar></Navbar>
       <section className="mt-16">
         <MasterYourLife></MasterYourLife>
-        {/* <EqBeatIq></EqBeatIq>
+        <EqBeatIq></EqBeatIq>
         <SoundFamilar></SoundFamilar>
         <MeetTheAhead></MeetTheAhead>
         <SelfImprovement></SelfImprovement>
@@ -25,7 +25,7 @@ export default function Home() {
         <ThinkOfYou></ThinkOfYou>
         <BeforeWeGetStart></BeforeWeGetStart>
         <WorkWithUs />
-        <Vaccencies/> */}
+        <Vaccencies/>
       </section>
     </>
   );
