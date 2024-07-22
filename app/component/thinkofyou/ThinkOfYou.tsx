@@ -60,7 +60,7 @@ const sunstep: { para: string }[] = [
 const SunStapper = ({ data, length, idx }: { data: string, length: number, idx: number }): React.ReactNode => {
     const id = useId();
     return (
-        <div className='w-full xl:w-[250px] relative flex flex-col   items-center gap-5'>
+        <div className='w-full hidden xl:w-[250px] relative sm:flex md:flex lg:flex xl:flex flex-col items-center gap-5'>
             {
                 idx!=0 && <div className='w-1/2 h-[1px]  absolute top-[13px] left-0 border border-dashed border-[#D58E4C]'></div>     }
             <div className=' z-0 sun-steeper'>
@@ -79,15 +79,15 @@ const SunStapper = ({ data, length, idx }: { data: string, length: number, idx: 
 function ThinkOfYou(): React.ReactNode {
 
     return (
-        <MainBox>
-            <main className='w-full lg:px-20 '>
-                <section className='bg-[#EDF8FE] w-full px-3  py-10 rounded-lg flex flex-col gap-5'>
+        <MainBox className='w-full'>
+            <main className='w-full lg:px-20'>
+                <section className='bg-[#EDF8FE] w-full lg:px-3  py-10 rounded-lg flex flex-col gap-5'>
                     <div className='flex flex-col items-center gap-5'>
                         <ParaCard para='Let your friends, family, and co-workers (anonymously) rate your social skills' pclassName='text-center'></ParaCard>
                         <Title title='Ever wounded what others think of you?' className='text-5xl font-bold text-center'></Title>
                     </div>
                     <div className='w-full flex justify-center'>
-                        <div className='w-full md:w-full lg:w-3/5 flex '>
+                    <div className='w-full md:w-full lg:w-3/5 flex '>
                             {
                                 sunstep.map((ele, idx) => {
                                     return <div className='' key={idx}><SunStapper data={ele.para} length={sunstep.length} idx={idx}></SunStapper></div>
